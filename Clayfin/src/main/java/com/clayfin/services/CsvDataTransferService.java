@@ -74,14 +74,14 @@ public class CsvDataTransferService {
 				// Handle validation errors (e.g., log, skip, or reject invalid records)
 				// System.out.println("Validation errors for record: " + Arrays.toString(row));
 				employee.setStatus("F");
-				Employee masterEmployee = new Employee();
-				masterEmployee.setName(employee.getName());
-				masterEmployee.setEmail(employee.getEmail());
-				masterEmployee.setMobileNumber(employee.getMobileNumber());
-				masterEmployee.setPanNumber(employee.getPanNumber());
-				masterEmployee.setStatus(employee.getStatus());
+				Employee tempEmployee = new Employee();
+				tempEmployee.setName(employee.getName());
+				tempEmployee.setEmail(employee.getEmail());
+				tempEmployee.setMobileNumber(employee.getMobileNumber());
+				tempEmployee.setPanNumber(employee.getPanNumber());
+				tempEmployee.setStatus(employee.getStatus());
 
-				employees.add(masterEmployee);
+				employees.add(tempEmployee);
 				
 			} else {
 				employee.setStatus("T");

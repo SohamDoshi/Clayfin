@@ -4,8 +4,6 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.validation.beanvalidation.LocalValidatorFactoryBean;
 
-import com.clayfin.services.CsvDataTransferService;
-
 import jakarta.validation.Validator;
 
 @Configuration
